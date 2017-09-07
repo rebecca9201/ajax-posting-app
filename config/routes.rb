@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     member do
       post :like
       post :unlike
+      post :toggle_flag
      end
    end
 end
