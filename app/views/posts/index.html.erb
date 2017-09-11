@@ -11,3 +11,18 @@
     <%= render :partial => "post", :locals => { :post => post } %>
   <% end %>
  </div>
+
+ <script>
+    $(".delete-post").click(function(e){
+      e.preventDefault();
+      var url = $(this).attr("href");
+      $.ajax({
+        url: url,
+        method: 'DELETE',
+        dataType: 'json',
+        success: function(data){
+          $("#post-" + data["id"]).remove();
+        }
+      })
+    })
+ </script>

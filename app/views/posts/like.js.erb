@@ -1,0 +1,5 @@
+// $("#post-like-<%= @post.id %>").html("<%= j render partial: "like", locals: { post: @post } %>");
+// $("#post-thumbsup-<%= @post.id %>").html("<%= @post.likes.count %>" + " 👍");
+
+// 替换整个区块
+$("#post-<%= @post.id %>").html("<%= j render :partial => "post", :locals => { :post => @post } %>");
