@@ -1,3 +1,40 @@
+<div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="http://oiz9kh8mu.bkt.clouddn.com/2017-09-12-11111.jpg" class="img-responsive"/>
+            <div class="carousel-caption">
+              <h2>Forever Love @Palao</h2>
+              <p>Leo & Angel</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://oiz9kh8mu.bkt.clouddn.com/2017-09-12-gulangyu.jpeg" class="img-responsive" />
+            <div class="carousel-caption">
+              <h2>Forever Love @鼓浪屿</h2>
+              <p>Leo & Angel</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://oiz9kh8mu.bkt.clouddn.com/2017-09-12-9th_Building_of_Tianjin_University.jpg" class="img-responsive"/>
+            <div class="carousel-caption">
+              <h2>Forever Love @天津大学</h2>
+              <p>Leo & Angel</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</div>
+
  <%= form_for Post.new, remote: true do |f| %>
    <div class="form-group">
      <%= f.text_area :content, :class => "form-control" %>
